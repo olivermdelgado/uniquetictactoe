@@ -38,6 +38,14 @@ oliver@Mac WorkWhileAssignment % go run main.go
 num of unique completed games: 958
 ```
 
+You can also run this program via Docker by building the image and subsequently running the container.
+```shell
+oliver@Mac WorkWhileAssignment % docker build -t unique-tic-tac-toe .
+...
+oliver@Mac WorkWhileAssignment % docker run --rm unique-tic-tac-toe
+num of unique completed games: 958
+```
+
 ## Thoughts
 This was interesting to work through and is seemingly straightforward once you give it a bit of thought. 
 However, I'm left bothered by the fact that I have no idea if the solution is correct. :( I can't think of a mathematical proof or ultimate unit test to validate the answer given the problem description.
